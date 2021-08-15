@@ -2,7 +2,6 @@ import React from 'react';
 import './style.css';
 import {push_pin,push_off,expand_less2x,Group,expand_close
     } from '../../assets/Index';
-import {data} from '../../const/theme';
 import { dataurl } from '../../const/const-v';
 
 const SubExpcardItem = ({data})=>{

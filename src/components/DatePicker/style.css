@@ -26,3 +26,34 @@
   height: 24px;
   margin-left: 24px;
 }
+
+.unstyled {
+  border-width: 0px !important;
+  background-color: transparent;
+  height: 35px;
+  font-size: 16px;
+  color: #706f6f;
+  font-family: sans-serif;
+}
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+  background: url("../../assets/png/Polygon.png") no-repeat;
+  background-position: center;
+  height: 30px;
+  margin-left: -10px;
+}
+.unstyled:focus {
+  outline: none;
+}
+.unstyled::after {
+  background: url("../../assets/png/Polygon.png") no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 30px;
+}
+
+.f-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
