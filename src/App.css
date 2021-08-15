@@ -1,38 +1,72 @@
+:root {
+  --c1: #fafafa;
+  --c2: #ffffff;
+  --c3: #dddfe2;
+  --c4: #0000001f;
+  --c5: #dce2eb;
+  --c6: #706f6f;
+  --c7: #3c3c3c;
+  --c8: #a9abac;
+  --c9: #ef5245;
+  --c10: #54575a;
+  --c11: #5d5d5d;
+  --c12: #92d150;
+  --c13: #0000001a;
+  --c14: #c7ced5;
+  --c15: #ebebeb;
+  --c16: #e3e3e3;
+  --c17: #21282e;
+  --c18: #0000000d;
+  --c19: #ededed;
+  --c20: #0000000f;
+  --c21: #f2f2f2;
+  --c22: #4060af;
+  --c23: #b99ff5;
+  --c24: #ffd800;
+  --s: 10px;
+  --sl: 12px;
+  --m: 14px;
+  --l: 16px;
+  --xl: 18px;
+  --xxl: 20px;
+  --xxxl: 28px;
+}
+
 .App {
   text-align: center;
+  overflow-x: hidden;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.unstyled {
+  border-width: 0px !important;
+  background-color: transparent;
+  height: 35px;
+  font-size: 16px;
+  color: #706f6f;
+  font-family: sans-serif;
+}
+.unstyled::-webkit-inner-spin-button,
+.unstyled::-webkit-calendar-picker-indicator {
+  background: url("./assets/png/Polygon.png") no-repeat;
+  background-position: center;
+  height: 30px;
+  margin-left: -10px;
+}
+.unstyled:focus {
+  outline: none;
+}
+.unstyled::after {
+  background: url("./assets/png/Polygon.png") no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.f-center {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

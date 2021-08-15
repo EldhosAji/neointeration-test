@@ -1,0 +1,43 @@
+.StatusMonitorSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 95%;
+  position: relative;
+}
+
+.StatusMonitorSection-cont-span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--xxxl);
+  color: var(--c6);
+}
+.StatusMonitorSection-cont > p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--l);
+  color: var(--c8);
+  margin: 0px;
+}
+.StatusMonitorSection-cont {
+  width: 100%;
+}
+.StatusMonitorSection-cont > .StatusMonitorSection-cont-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.StatusMonitorSection-cont-sec > .toggle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.StatusMonitorSection-cont-sec > .toggle-container > span {
+  margin-left: 1rem;
+  font-size: var(--xl);
+  color: var(--c6);
+}

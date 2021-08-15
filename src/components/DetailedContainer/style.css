@@ -1,0 +1,80 @@
+.DetailedContainer {
+  width: fit-content;
+  padding-right: 10px;
+  box-sizing: border-box;
+  display: flex;
+  background-color: var(--c2);
+  border: 1px solid var(--c3);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.DetailedContainer > span::before {
+  content: url(../../assets/svg/Ellipse\ 152.svg);
+}
+
+.DetailedHeaderSection {
+  height: 100px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: 36px;
+}
+.DetailedHeaderSection > span {
+  width: 130px;
+  font-size: var(--l);
+  color: var(--c11);
+  position: relative;
+}
+.DetailedHeaderSection > span::before {
+  margin-right: 5px;
+}
+.DetailedHeaderSection > #branched-0::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  position: absolute;
+  left: 0px;
+  background-color: var(-c2);
+  border: 1px solid var(--c11);
+}
+.DetailedHeaderSection > #branched-1::before {
+  content: url(../../assets/svg/Ellipse\ 155.svg);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 10px;
+}
+.DetailedHeaderSection > #branched-2::before {
+  content: url(../../assets/svg/Group\ 1377.svg);
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: -5px;
+  top: -4px;
+}
+.DetailedHeaderSection > #branched-3::before {
+  content: url(../../assets/svg/Group\ 1378.svg);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 10px;
+  top: -4px;
+}
+.DetailedHeaderSection > #branched-4::before {
+  content: url(../../assets/svg/Ellipse\ 156.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -5px;
+  top: 0px;
+}
+.DetailedHeaderSection > #branched-5::before {
+  content: url(../../assets/svg/Ellipse\ 152.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+}
