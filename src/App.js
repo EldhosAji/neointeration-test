@@ -1,5 +1,5 @@
 import './App.css';
-import { DrawerNav,HomeContainer, } from './components/Index';
+import { DrawerNav,Footer,HomeContainer, } from './components/Index';
 
 
 
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
         <DrawerNav/>
         <HomeContainer/>
-        
+        <Footer/>
     </div>
   );
 }

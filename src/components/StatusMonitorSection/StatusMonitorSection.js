@@ -1,6 +1,6 @@
 import React , {  useState } from 'react'
 import './style.css';
-import { month } from '../../const/theme';
+import { month } from '../../const/const-v';
 import ToggleBtn from '../ToggleBtn/ToggleBtn';
 import DatePicker from '../DatePicker/DatePicker';
 

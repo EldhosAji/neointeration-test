@@ -3,6 +3,7 @@ import './style.css';
 import {push_pin,push_off,expand_less2x,Group,expand_close
     } from '../../assets/Index';
 import {data} from '../../const/theme';
+import { dataurl } from '../../const/const-v';
 
 const SubExpcardItem = ({data})=>{
     return <div className="SubExpcardItem">
@@ -91,6 +92,15 @@ const CardsSectionContainer=({pinned,desabled=false,id,onPinClick=()=>null})=>{
             </div>
 }
 
+//Data fetch call
+const apiCall = async ()=>{
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+      
+     return fetch(dataurl, requestOptions).then(response => response.json())
+}
 
 const CardDetailedContainer = () => {
     const [pinned,setPinned] = React.useState({});
@@ -99,10 +109,12 @@ const CardDetailedContainer = () => {
     const scrollRef =React.useRef(null);
 
     const init =()=>{
-        const [p,up] = filterData(data);
-        setPinned(p);
-        setUnPinned(up);
-        setLoading(false);
+        apiCall().then(res=>{
+            const [p,up] = filterData(res);
+            setPinned(p);
+            setUnPinned(up);
+            setLoading(false);
+        }).catch(error => console.log('error', error));
     }
     React.useEffect(()=>{
         init();
